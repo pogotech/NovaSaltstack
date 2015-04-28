@@ -1,0 +1,6 @@
+# Intro to Saltstack Class 
+Date of talk: 2015/04/21
+Files:
+* IntrotoSaltStack.pptx - the powerpoint of the talk that was given
+* demo/master/Vagrantfile - the file to start-up the demo VM for the salt master
+* demo/minion/Vagrantfile - the file to start-up the demo VM for the salt minion
