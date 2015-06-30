@@ -83,8 +83,8 @@ gitfs_provider: pygit2
 
 gitfs_remotes:
   - git://github.com/saltstack/salt-states.git
-  - https://github.com/pogotech/internal-salt.git
-    - base: saltdemo
+  - https://github.com/pogotech/NovaSaltstack.git
+    - root: GitSalt/remote-git/salt
 
 #
 # The gitfs_ssl_verify option specifies whether to ignore ssl certificate
@@ -111,9 +111,8 @@ gitfs_remotes:
 #  base:
 #    - /srv/pillar
 #
-#ext_pillar:
-#  - hiera: /etc/hiera.yaml
-#  - cmd_yaml: cat /etc/salt/yaml
+ext_pillar:
+  - git: master https://github.com/pogotech/NovaSaltstack.git root=GitSalt/remote-git/pillar
 
 # The ext_pillar_first option allows for external pillar sources to populate
 # before file system pillar. This allows for targeting file system pillar from
