@@ -1,0 +1,4 @@
+master: 192.168.33.10
+state_output: mixed
+file_client: remote
+

@@ -1,0 +1,7 @@
+# Default Packages that I want installed everywhere.
+mypkgs:
+  pkg.installed:
+    - pkgs:
+      - vim-enhanced
+      - nmap
+
